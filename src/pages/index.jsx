@@ -2,7 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import About from "../components/About"
-import Beneficios from "../components/Beneficios"
+import Benefits from "../components/Benefits"
+import Image from "../components/Image"
+import Payment from "../components/Payment"
 import { Main } from "../styles"
 
 const IndexPage = () => (
@@ -11,7 +13,9 @@ const IndexPage = () => (
     <Header />
     <Main>
       <About />
-      <Beneficios />
+      <Benefits />
+      <Image />
+      <Payment />
     </Main>
   </>
 )

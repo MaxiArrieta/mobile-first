@@ -1,7 +1,7 @@
 import React from "react"
 import { Section, Article } from "./styles"
 
-const Cards = ({ imageUrl, title, article }) => {
+const Card = ({ imageUrl, title, article }) => {
   return (
     <Section>
       <Article imageUrl={imageUrl}>
@@ -13,4 +13,4 @@ const Cards = ({ imageUrl, title, article }) => {
   )
 }
 
-export default Cards
+export default Card

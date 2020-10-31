@@ -25,7 +25,12 @@ const Header = () => {
           Batabit te ayuda a navegar entre los diferentes precios y tendencias.
         </p>
         {/* Paso la url de la imagen por prop al styled component */}
-        <Botton imagenUrl={images.publicURL} href="#">
+        <Botton
+          imagenUrl={images.publicURL}
+          to="payments"
+          smooth
+          duration={2000}
+        >
           Conoce Nuestros Planes <span></span>
         </Botton>
       </Div>

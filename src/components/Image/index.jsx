@@ -1,24 +1,24 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Section } from "./styles"
 const Image = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "3.jpg" }) {
+      image: file(relativePath: { eq: "images/bitcoinbaby2x.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
+        publicURL
       }
     }
   `)
 
-  const img = image.sharp.fluid
   return (
-    <section id="home">
-      <p>hola</p>
-    </section>
+    <Section imagenUrl={image.publicURL}>
+      <h2>Conocelo hoy.</h2>
+    </Section>
   )
 }
 

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link as LinkScroll } from "react-scroll"
 
 export const Section = styled.header`
   position: relative;
@@ -43,7 +44,7 @@ export const Div = styled.div`
   align-self: center;
 `
 
-export const Botton = styled.a`
+export const Botton = styled(LinkScroll)`
   position: absolute;
   /* Hago un calculo  para centrarlo */
   left: calc(50% - 118px);

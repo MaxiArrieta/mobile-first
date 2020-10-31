@@ -1,9 +1,9 @@
 import React from "react"
-import Cards from "../Cards"
+import Card from "../Card"
 import { Section, Div, Span } from "./styles"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Beneficios = () => {
+const Benefits = () => {
   const { image, check, clock, dollar, eye } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "icons/batata.svg" }) {
@@ -36,22 +36,22 @@ const Beneficios = () => {
         <h2>Creamos un producto sin comparación.</h2>
         <p>Confiable y diseñado para su uso diario.</p>
       </Div>
-      <Cards
+      <Card
         imageUrl={clock.publicURL}
         title="Tiempo real"
         article="Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento."
       />
-      <Cards
+      <Card
         imageUrl={eye.publicURL}
         title="No hay tasas escondidas"
         article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
       />
-      <Cards
+      <Card
         imageUrl={dollar.publicURL}
         title="Compara monedas"
         article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
       />
-      <Cards
+      <Card
         imageUrl={check.publicURL}
         title="Información confiable"
         article="Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan."
@@ -60,4 +60,4 @@ const Beneficios = () => {
   )
 }
 
-export default Beneficios
+export default Benefits
