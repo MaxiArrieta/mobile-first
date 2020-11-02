@@ -4,7 +4,7 @@ export const Section = styled.section`
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url(${props => props.imagenUrl});
+  background-image: url(${props => props.imagen});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -70,6 +70,6 @@ export const Botton = styled(LinkScroll)`
     height: 8px;
     margin-left: 10px;
     /* Resivo por prop la url de la imagen */
-    background-image: url(${props => props.imagenUrl});
+    background-image: url(${props => props.imagen});
   }
 `

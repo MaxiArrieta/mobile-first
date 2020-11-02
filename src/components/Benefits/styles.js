@@ -40,9 +40,11 @@ export const Div = styled.div`
     color: #808080;
   }
 `
-// export const DivGrid = styled.div`
-//   display: grid;
-//   grid-auto-columns: auto;
-//   grid-auto-rows: auto;
-//   grid-gap: 1.5px;
-// `
+export const DivCards = styled.div`
+  @media (min-width: 930px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+  }
+`

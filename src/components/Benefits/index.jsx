@@ -1,6 +1,6 @@
 import React from "react"
 import Card from "../Card"
-import { Section, Div, Span } from "./styles"
+import { Section, Div, Span, DivCards } from "./styles"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Benefits = () => {
@@ -36,26 +36,28 @@ const Benefits = () => {
         <h2>Creamos un producto sin comparación.</h2>
         <p>Confiable y diseñado para su uso diario.</p>
       </Div>
-      <Card
-        imageUrl={clock.publicURL}
-        title="Tiempo real"
-        article="Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento."
-      />
-      <Card
-        imageUrl={eye.publicURL}
-        title="No hay tasas escondidas"
-        article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
-      />
-      <Card
-        imageUrl={dollar.publicURL}
-        title="Compara monedas"
-        article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
-      />
-      <Card
-        imageUrl={check.publicURL}
-        title="Información confiable"
-        article="Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan."
-      />
+      <DivCards>
+        <Card
+          imageUrl={clock.publicURL}
+          title="Tiempo real"
+          article="Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento."
+        />
+        <Card
+          imageUrl={eye.publicURL}
+          title="No hay tasas escondidas"
+          article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
+        />
+        <Card
+          imageUrl={dollar.publicURL}
+          title="Compara monedas"
+          article="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
+        />
+        <Card
+          imageUrl={check.publicURL}
+          title="Información confiable"
+          article="Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan."
+        />
+      </DivCards>
     </Section>
   )
 }

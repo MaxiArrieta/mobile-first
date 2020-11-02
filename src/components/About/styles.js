@@ -35,17 +35,17 @@ export const ImgDiv = styled.div`
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url(${props => props.imagenUrl});
+  background-image: url(${props => props.imagen});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 `
 export const DivTabla = styled.section`
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
-  margin: 0 auto;
-  /* text-align: center; */
+  margin: 0 30px;
   font-family: "Inter", sans-serif;
 `
 
@@ -58,7 +58,7 @@ export const Title = styled.p`
   color: var(--bitcoin-orange);
 `
 export const Title2 = styled.p`
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-align: center;
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -140,6 +140,18 @@ export const F2 = styled.div`
     height: 20px;
     margin-left: 20px;
     background-size: cover;
-    background-image: url(${props => props.imagenUrl});
+    background-image: url(${props => props.imagen});
+  }
+`
+export const DivScroll = styled.div`
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 32px;
+  @media (min-width: 930px) {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
   }
 `

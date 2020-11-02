@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-export const Section = styled.section``
-
 export const Article = styled.article`
   width: 90%;
   min-width: 288px;

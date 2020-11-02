@@ -5,6 +5,7 @@ import About from "../components/About"
 import Benefits from "../components/Benefits"
 import Image from "../components/Image"
 import Payment from "../components/Payment"
+import Footer from "../components/Footer"
 import { Main } from "../styles"
 
 const IndexPage = () => (
@@ -16,6 +17,7 @@ const IndexPage = () => (
       <Benefits />
       <Image />
       <Payment />
+      <Footer />
     </Main>
   </>
 )

@@ -16,7 +16,7 @@ const Image = () => {
   `)
 
   return (
-    <Section imagenUrl={image.publicURL}>
+    <Section imagen={image.publicURL}>
       <h2>Conocelo hoy.</h2>
     </Section>
   )

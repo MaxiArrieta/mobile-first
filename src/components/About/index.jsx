@@ -11,6 +11,7 @@ import {
   SubTitle2,
   F1,
   F2,
+  DivScroll,
 } from "./styles"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -34,7 +35,7 @@ const About = () => {
 
   return (
     <Section>
-      <ImgDiv imagenUrl={image.publicURL}></ImgDiv>
+      <ImgDiv imagen={image.publicURL}></ImgDiv>
       <Div>
         <h2>Visibilizamos todas las tasas de cambio.</h2>
         <p>
@@ -42,58 +43,60 @@ const About = () => {
           monedas más importantes del mundo.
         </p>
       </Div>
-      <DivTabla>
-        <Title>Monedas</Title>
-        <Table>
-          <F1>Bitcoin</F1>
-          <F2 imagenUrl={trendingDown.publicURL}>
-            $ 1.96 <span></span>
-          </F2>
-          <F1>Ethereum</F1>
-          <F2 imagenUrl={trendingUp.publicURL}>
-            $ 0.07 <span></span>
-          </F2>
-          <F1>Ripple</F1>
-          <F2 imagenUrl={trendingDown.publicURL}>
-            $ 2.15 <span></span>
-          </F2>
-          <F1>Stellar</F1>
-          <F2 imagenUrl={trendingDown.publicURL}>
-            $ 4.96 <span></span>
-          </F2>
-        </Table>
-        <SubTitle>
-          <p>
-            Actualizado: <span>19 Julio 23:45</span>
-          </p>
-        </SubTitle>
-      </DivTabla>
-      <DivTabla>
-        <Title2>Comisiones</Title2>
-        <Table>
-          <F1>Bitrade</F1>
-          <F2>
-            $ 12.96 <span></span>
-          </F2>
-          <F1>Bitpreco</F1>
-          <F2>
-            $ 13.07 <span></span>
-          </F2>
-          <F1>Novadax</F1>
-          <F2>
-            $ 13.15 <span></span>
-          </F2>
-          <F1>Coinext</F1>
-          <F2>
-            $ 14.96 <span></span>
-          </F2>
-        </Table>
-        <SubTitle2>
-          <p>
-            Actualizado: <span>19 Julio 23:48</span>
-          </p>
-        </SubTitle2>
-      </DivTabla>
+      <DivScroll>
+        <DivTabla>
+          <Title>Monedas</Title>
+          <Table>
+            <F1>Bitcoin</F1>
+            <F2 imagen={trendingDown.publicURL}>
+              $ 1.96 <span></span>
+            </F2>
+            <F1>Ethereum</F1>
+            <F2 imagen={trendingUp.publicURL}>
+              $ 0.07 <span></span>
+            </F2>
+            <F1>Ripple</F1>
+            <F2 imagen={trendingDown.publicURL}>
+              $ 2.15 <span></span>
+            </F2>
+            <F1>Stellar</F1>
+            <F2 imagen={trendingDown.publicURL}>
+              $ 4.96 <span></span>
+            </F2>
+          </Table>
+          <SubTitle>
+            <p>
+              Actualizado: <span>19 Julio 23:45</span>
+            </p>
+          </SubTitle>
+        </DivTabla>
+        <DivTabla>
+          <Title2>Comisiones</Title2>
+          <Table>
+            <F1>Bitrade</F1>
+            <F2>
+              $ 12.96 <span></span>
+            </F2>
+            <F1>Bitpreco</F1>
+            <F2>
+              $ 13.07 <span></span>
+            </F2>
+            <F1>Novadax</F1>
+            <F2>
+              $ 13.15 <span></span>
+            </F2>
+            <F1>Coinext</F1>
+            <F2>
+              $ 14.96 <span></span>
+            </F2>
+          </Table>
+          <SubTitle2>
+            <p>
+              Actualizado: <span>19 Julio 23:48</span>
+            </p>
+          </SubTitle2>
+        </DivTabla>
+      </DivScroll>
     </Section>
   )
 }
